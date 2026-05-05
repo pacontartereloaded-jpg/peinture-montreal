@@ -1,0 +1,170 @@
+export interface Project {
+  id: string
+  title: string
+  location: string
+  type: string
+  before: string
+  after: string
+  accentColor: string
+  featured?: boolean
+}
+
+export const BEFORE_AFTER_PROJECTS: Project[] = [
+  {
+    id: '01',
+    title: 'Rénovation complète',
+    location: 'Montréal, QC',
+    type: 'Interior — Full repaint',
+    before: '/antes/01.jpeg',
+    after:  '/despues/01.jpeg',
+    accentColor: '#D8C7B2',
+    featured: true,
+  },
+
+  {
+    id: '04',
+    title: 'Peinture murale intérieure',
+    location: 'Montréal, QC',
+    type: 'Interior — Walls & trim',
+    before: '/antes/04.jpeg',
+    after:  '/despues/04.jpeg',
+    accentColor: '#BCC5C0',
+  },
+  {
+    id: '06',
+    title: 'Transformation espace',
+    location: 'Montréal, QC',
+    type: 'Interior — Full repaint',
+    before: '/antes/06.jpeg',
+    after:  '/despues/06.jpeg',
+    accentColor: '#A8B8A0',
+  },
+  {
+    id: '07',
+    title: 'Finition professionnelle',
+    location: 'Montréal, QC',
+    type: 'Interior — Premium finish',
+    before: '/antes/07.jpeg',
+    after:  '/despues/07.jpeg',
+    accentColor: '#102A43',
+  },
+  {
+    id: '08',
+    title: 'Réfection intérieure',
+    location: 'Montréal, QC',
+    type: 'Interior — Full room',
+    before: '/antes/08.jpeg',
+    after:  '/despues/08.jpeg',
+    accentColor: '#BCC5C0',
+  },
+  {
+    id: '10',
+    title: 'Transformation complète',
+    location: 'Montréal, QC',
+    type: 'Interior — Complete repaint',
+    before: '/antes/10.jpeg',
+    after:  '/despues/10.jpeg',
+    accentColor: '#A8B8A0',
+  },
+  {
+    id: '11',
+    title: 'Rénovation pièce à vivre',
+    location: 'Montréal, QC',
+    type: 'Interior — Living space',
+    before: '/antes/11.jpeg',
+    after:  '/despues/11.jpeg',
+    accentColor: '#102A43',
+  },
+  {
+    id: '12',
+    title: 'Finition haut de gamme',
+    location: 'Montréal, QC',
+    type: 'Interior — High-end finish',
+    before: '/antes/12.jpeg',
+    after:  '/despues/12.jpeg',
+    accentColor: '#BCC5C0',
+  },
+  {
+    id: '13',
+    title: 'Peinture appartement',
+    location: 'Montréal, QC',
+    type: 'Interior — Apartment',
+    before: '/antes/13.jpeg',
+    after:  '/despues/13.jpeg',
+    accentColor: '#D8C7B2',
+  },
+  {
+    id: '14',
+    title: 'Transformation murale',
+    location: 'Montréal, QC',
+    type: 'Interior — Walls',
+    before: '/antes/14.jpeg',
+    after:  '/despues/14.jpeg',
+    accentColor: '#A8B8A0',
+  },
+  {
+    id: '15',
+    title: 'Réfection résidentielle',
+    location: 'Montréal, QC',
+    type: 'Residential — Full repaint',
+    before: '/antes/15.jpeg',
+    after:  '/despues/15.jpeg',
+    accentColor: '#102A43',
+  },
+  {
+    id: '16',
+    title: 'Espace rénové',
+    location: 'Montréal, QC',
+    type: 'Interior — Renovated space',
+    before: '/antes/16.jpeg',
+    after:  '/despues/16.jpeg',
+    accentColor: '#BCC5C0',
+  },
+
+  {
+    id: '18',
+    title: 'Transformation intérieure',
+    location: 'Montréal, QC',
+    type: 'Interior — Complete',
+    before: '/antes/18.jpeg',
+    after:  '/despues/18.jpeg',
+    accentColor: '#A8B8A0',
+  },
+
+  {
+    id: '20',
+    title: 'Finition soignée',
+    location: 'Montréal, QC',
+    type: 'Interior — Careful finish',
+    before: '/antes/20.jpeg',
+    after:  '/despues/20.jpeg',
+    accentColor: '#BCC5C0',
+  },
+  {
+    id: '21',
+    title: 'Peinture intérieure',
+    location: 'Montréal, QC',
+    type: 'Interior — Walls & ceilings',
+    before: '/antes/21.jpeg',
+    after:  '/despues/21.jpeg',
+    accentColor: '#D8C7B2',
+  },
+  {
+    id: '22',
+    title: 'Réfection appartement',
+    location: 'Montréal, QC',
+    type: 'Interior — Apartment repaint',
+    before: '/antes/22.jpeg',
+    after:  '/despues/22.jpeg',
+    accentColor: '#A8B8A0',
+  },
+  {
+    id: '23',
+    title: 'Transformation résidentielle',
+    location: 'Montréal, QC',
+    type: 'Residential — Full repaint',
+    before: '/antes/23.jpeg',
+    after:  '/despues/23.jpeg',
+    accentColor: '#102A43',
+  },
+]

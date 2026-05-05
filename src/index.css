@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 108px;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #111111;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-10;
+  }
+
+  .label-tag {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.15em] uppercase text-navy;
+  }
+
+  .heading-display {
+    @apply text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-[#111111] leading-[1.1] tracking-tight;
+  }
+
+  .heading-section {
+    @apply text-3xl sm:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight;
+  }
+
+  .body-lead {
+    @apply text-[17px] text-[#5F6368] leading-relaxed;
+  }
+
+  .card-base {
+    @apply bg-white border border-[#E8E4DD] rounded-xl p-6 transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-[#102A43] text-white text-[14px] font-semibold px-6 py-3.5 rounded hover:bg-[#1a3a58] active:bg-[#0c2038] transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 text-[#111111] text-[14px] font-semibold px-6 py-3.5 rounded border border-[#E8E4DD] hover:border-[#2C2C2C] hover:bg-[#F8F7F4] transition-all duration-200;
+  }
+}

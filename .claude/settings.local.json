@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(Start-Process npm *)",
+      "Bash(Select-Object -ExpandProperty Id)",
+      "PowerShell(cd \"E:\\\\Peinture Montreal\"; $proc = Start-Process npm -ArgumentList 'run','dev' -WindowStyle Hidden -PassThru; Start-Sleep 4; $proc.Id)",
+      "PowerShell(Start-Sleep 3; Invoke-WebRequest -Uri \"http://localhost:5173\" -UseBasicParsing -TimeoutSec 10 | Select-Object StatusCode, @{N='Length';E={$_.Content.Length}})",
+      "PowerShell(Start-Sleep 5; Invoke-WebRequest -Uri \"http://localhost:5173\" -UseBasicParsing -TimeoutSec 10 | Select-Object StatusCode, @{N='Length';E={$_.Content.Length}})",
+      "PowerShell(Get-Process *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "PowerShell(Get-NetTCPConnection *)",
+      "PowerShell(New-Item *)",
+      "Bash(node -e ' *)",
+      "Bash(powershell -Command ' *)",
+      "Bash(npx tsc *)",
+      "Bash(Start-Process -NoNewWindow npm -ArgumentList \"run\",\"dev\",\"--\",\"--port\",\"5178\")",
+      "Bash(Start-Sleep -Seconds 3)",
+      "Bash(Invoke-WebRequest -Uri \"http://localhost:5178/en/interior-painting-montreal\" -UseBasicParsing)",
+      "Bash(Select-Object -ExpandProperty StatusCode)",
+      "PowerShell(Start-Process -NoNewWindow -FilePath \"npm\" -ArgumentList \"run\",\"dev\",\"--\",\"--port\",\"5178\" -RedirectStandardOutput \"C:\\\\Temp\\\\vite-dev.log\" -ErrorAction SilentlyContinue; Start-Sleep -Seconds 4; try { \\(Invoke-WebRequest -Uri \"http://localhost:5178\" -UseBasicParsing -TimeoutSec 5\\).StatusCode } catch { \"Server not ready yet or port conflict\" })",
+      "PowerShell(try { \\(Invoke-WebRequest -Uri \"http://localhost:5178\" -UseBasicParsing -TimeoutSec 3\\).StatusCode } catch { \"not running\" })",
+      "Bash(npx vite *)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
